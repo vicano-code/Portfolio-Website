@@ -1,0 +1,53 @@
+.services{
+    padding: 0.3rem 0.3rem;
+    display: flex;
+    flex-flow: column;
+    height: 90vh;
+    margin-bottom: 8rem;
+    margin-top: 8rem;
+    gap: 4rem;
+    align-items: center;
+}
+
+.awesome{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.awesome>:nth-child(1) {
+    
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgb(212, 194, 29), 1px 1px 1px rgb(15, 1, 1);
+}
+
+.s-button{
+    width: 8rem;
+    height: 2rem;
+    margin-top: 1rem;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+    line-height: 2rem
+}
+
+@media screen and (max-width: 480px) {
+    .services{
+        margin-top: 0;
+        flex-direction: column;
+        gap: 5rem;
+        height: 66rem;
+        padding: 0;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 17rem;
+    }
+    .cards>*{
+        position: static;
+    }
+}
