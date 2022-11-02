@@ -1,43 +1,44 @@
 import React from 'react'
 import './Services.css'
-import Glasses from '../../img/glasses.png';
-import HeartEmoji from '../../img/heartemoji.png';
-import Humble from '../../img/humble.png';
-import Card from '../Card/Card';
-import { motion } from 'framer-motion'
+import WebDesign from '../../img/web-design.png';
+import DataScience from '../../img/data-science.jpg';
+import Excelvba from '../../img/excel.webp';
 
 const Services = () => {
 
     return (
-        <div className="services" id='Services'>
-            {/* left side */}
-            <div className="awesome">
-                <span>My Awesome Services</span>
-                <div className="blur s-blurl" style={{ background: "#ABF1FF94" }}></div>
-            </div>
-            {/* right side */}
-            <div className="cards">
-                <Card
-                    emoji={HeartEmoji}
-                    heading={'Developer'}
-                    detail={"HTML, CSS, JavaScript, React.js, Bootstrap, Node(NPM), jQuery, Redux, VSCode."}
-                />
-                {/* second card*/}
-                <Card
-                    emoji={Glasses}
-                    heading={'Excel VBA'}
-                    detail={`Automation, professional user forms,
-                     Importing information from multiple workbooks to a central workbook,
-                      Consolidating information from multiple worksheets into a central worksheet,
-                      Optimization problems, 
-                      Pivot Tables and Charts, and more... `}
-                />
-                {/* third card*/}
-                <Card
-                    emoji={Humble}
-                    heading={'Data Science'}
-                    detail={"Data scraping, Data cleaning, Data analysis, Data visualization, Regression analysis, Supervised learning, Unsupervised Learning, TIme Series Analysis "}
-                />
+        <div className="ServicePage">
+            <h2>What I can Offer</h2>
+            <div id='Services'>
+                <div className='Services'>
+                    <img src={WebDesign} alt="" />
+                    <ul>
+                        <li>Figma, Material Design</li>
+                        <li>HTML5, CSS3, JavaScript </li>
+                        <li>Bootstrap, jQuery</li>
+                        <li>React.js, Redux</li>
+                        <li>Responsive development</li>
+                    </ul>
+                </div>
+                <div className='Services'>
+                    <img src={DataScience} alt="" />
+                    <ul>
+                        <li>Data scraping and cleaning</li>
+                        <li>Data analysis and visualization </li>
+                        <li>Supervised and Unsupervised Learning</li>
+                        <li>Time Series Analysis</li>
+                    </ul>
+                </div>
+                <div className='Services'>
+                    <img src={Excelvba} alt="" />
+                    <ul>
+                        <li>Import/Export arrays from/to Excel using VBA code</li>
+                        <li>Write data to .txt files and import information from .txt files</li>
+                        <li>automate the import, modification, and consolidation of information from multiple worksheets/workbooks</li>
+                        <li>creating professional user forms to interface with the user</li>
+                        <li>perform advanced calculations, and manipulate data on the spreadsheet.</li>
+                    </ul>
+                </div>
             </div>
         </div>
     )
